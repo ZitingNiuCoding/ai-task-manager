@@ -1,0 +1,22 @@
+# 密码和环境配置
+.env
+.env.*
+!.env.example
+
+# Python 虚拟环境
+.venv/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 编辑器
+.vscode/
+
+# 临时备份
+*.bak
