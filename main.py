@@ -15,7 +15,7 @@ app.include_router(users.router)
 def root():
     return {"message": "Hello, World!! AI Task Manager API",
             "status":"running",
-            "version": "v2"
+            "version": "v3"
             }
 
 @app.get("/about")
