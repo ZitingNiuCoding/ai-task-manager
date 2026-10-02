@@ -14,12 +14,13 @@ app.include_router(users.router)
 @app.get("/")  # 根路径
 def root():
     return {"message": "Hello, World! AI Task Manager API",
-            "status":"running"}
+            "status":"running",
+            "version": "v2"
+            }
 
 @app.get("/about")
 def about():
     return {
-        "project":"AI Task Manager", 
+        "project":"AI Task Manager",
         "version":1
     }
-
