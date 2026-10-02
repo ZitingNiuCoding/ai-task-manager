@@ -13,7 +13,7 @@ app.include_router(users.router)
 # get
 @app.get("/")  # 根路径
 def root():
-    return {"message": "Hello, World! AI Task Manager API",
+    return {"message": "Hello, World!! AI Task Manager API",
             "status":"running",
             "version": "v2"
             }
