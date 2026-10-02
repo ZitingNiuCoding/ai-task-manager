@@ -48,6 +48,3 @@ jobs:
 
       - name: Run tests
         run: uv run pytest
-        
-      - name: Intentional failure
-        run: exit 1
