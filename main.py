@@ -14,7 +14,7 @@ app.include_router(ai.router)
 # get
 @app.get("/")  # 根路径
 def root():
-    return {"Hello, 梅梅!! 祝你今天美好且开心！"
+    return {"Hello梅梅!! 祝你今天美好且开心！"
                                             "——子婷的祝福"
             }
 
