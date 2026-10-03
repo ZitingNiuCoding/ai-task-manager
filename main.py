@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from ai_task_manager.routers import tasks, users
+from ai_task_manager.routers import tasks, users, ai
 # 创建一个对象，叫app, 创建 FastAPI 应用
 app = FastAPI()
 
@@ -8,13 +8,14 @@ app = FastAPI()
 
 app.include_router(tasks.router)
 app.include_router(users.router)
-
+app.include_router(ai.router)
 
 # get
 @app.get("/")  # 根路径
 def root():
-    return {"Hello梅梅!! 祝你今天美好且开心！"
-                                            "——子婷的祝福"
+    return {"message": "Hello, World!! AI Task Manager API",
+            "status":"running",
+            "version": "v4"
             }
 
 @app.get("/about")
